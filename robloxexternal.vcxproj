@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{b1cb9a64-0466-44f8-a932-f44f099dd2d5}</ProjectGuid>
+    <RootNamespace>robloxexternal</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)build</OutDir>
+    <IntDir>$(SolutionDir)build\intermediates</IntDir>
+    <IncludePath>C:\Users\alias\Documents\robloxexternal\client\vendor\imgui\freetype\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\alias\Documents\robloxexternal\client\vendor\imgui\freetype\objs;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/wd4005 /wd4305 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>../robloxexternal/client/;../robloxexternal/client/vendor;C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um;../robloxexternal/client/vendor\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>ws2_32.lib;wldap32.lib;advapi32.lib;crypt32.lib;normaliz.lib;
+d3d11.lib;dwmapi.lib;freetype.lib;dxgi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <AdditionalLibraryDirectories>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.26100.0\um\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ForceFileOutput>
+      </ForceFileOutput>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="client\cache\player_cache\player_cache.cpp" />
+    <ClCompile Include="client\features\combat\aimbot\aimbot.cpp" />
+    <ClCompile Include="client\features\menu\menu.cpp" />
+    <ClCompile Include="client\features\misc\antistomp\antistomp.cpp" />
+    <ClCompile Include="client\features\misc\desync\desync.cpp" />
+    <ClCompile Include="client\features\misc\flight\flight.cpp" />
+    <ClCompile Include="client\features\misc\gravity\gravity.cpp" />
+    <ClCompile Include="client\features\misc\jumpheight\jumpheight.cpp" />
+    <ClCompile Include="client\features\misc\voidhide\voidhide.cpp" />
+    <ClCompile Include="client\features\misc\walkspeed\walkspeed.cpp" />
+    <ClCompile Include="client\features\overlay\fonts\fonts.cpp" />
+    <ClCompile Include="client\features\overlay\overlay.cpp" />
+    <ClCompile Include="client\features\visuals\esp\esp.cpp" />
+    <ClCompile Include="client\features\visuals\fovchanger\fovchanger.cpp" />
+    <ClCompile Include="client\features\visuals\interface\interface.cpp" />
+    <ClCompile Include="client\features\visuals\offscreen\offscreen.cpp" />
+    <ClCompile Include="client\features\world\ambient\ambient.cpp" />
+    <ClCompile Include="client\features\world\lighting\lighting.cpp" />
+    <ClCompile Include="client\framework\elements\button.cpp" />
+    <ClCompile Include="client\framework\elements\checkbox.cpp" />
+    <ClCompile Include="client\framework\elements\child.cpp" />
+    <ClCompile Include="client\framework\elements\coloredit.cpp" />
+    <ClCompile Include="client\framework\elements\draw.cpp" />
+    <ClCompile Include="client\framework\elements\dropdown.cpp" />
+    <ClCompile Include="client\framework\elements\helpers.cpp" />
+    <ClCompile Include="client\framework\elements\keybind.cpp" />
+    <ClCompile Include="client\framework\elements\section.cpp" />
+    <ClCompile Include="client\framework\elements\slider.cpp" />
+    <ClCompile Include="client\framework\elements\table.cpp" />
+    <ClCompile Include="client\framework\elements\textfield.cpp" />
+    <ClCompile Include="client\framework\elements\window.cpp" />
+    <ClCompile Include="client\framework\gui.cpp" />
+    <ClCompile Include="client\game\gameloop.cpp" />
+    <ClCompile Include="client\game\vischeck\vischeck.cpp" />
+    <ClCompile Include="client\globals\globals.cpp" />
+    <ClCompile Include="client\sdk\utils\brick_color.cpp" />
+    <ClCompile Include="client\utils\driver\driver.cpp" />
+    <ClCompile Include="client\main.cpp" />
+    <ClCompile Include="client\utils\game.h" />
+    <ClCompile Include="client\utils\quaternion.h" />
+    <ClCompile Include="client\utils\vector.h" />
+    <ClCompile Include="client\vendor\imgui\imgui.cpp" />
+    <ClCompile Include="client\vendor\imgui\imgui_draw.cpp" />
+    <ClCompile Include="client\vendor\imgui\imgui_freetype.cpp" />
+    <ClCompile Include="client\vendor\imgui\imgui_impl_dx11.cpp" />
+    <ClCompile Include="client\vendor\imgui\imgui_impl_win32.cpp" />
+    <ClCompile Include="client\vendor\imgui\imgui_tables.cpp" />
+    <ClCompile Include="client\vendor\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="client\vendor\oxorany\oxorany.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="client\configuration\config.h" />
+    <ClInclude Include="client\features\combat\aimbot\aimbot.h" />
+    <ClInclude Include="client\features\feature.h" />
+    <ClInclude Include="client\features\menu\menu.h" />
+    <ClInclude Include="client\features\misc\antistomp\antistomp.h" />
+    <ClInclude Include="client\features\misc\desync\desync.h" />
+    <ClInclude Include="client\features\misc\flight\flight.h" />
+    <ClInclude Include="client\features\misc\gravity\gravity.h" />
+    <ClInclude Include="client\features\misc\jumpheight\jumpheight.h" />
+    <ClInclude Include="client\features\misc\voidhide\voidhide.h" />
+    <ClInclude Include="client\features\misc\walkspeed\walkspeed.h" />
+    <ClInclude Include="client\features\overlay\fonts\fonts.h" />
+    <ClInclude Include="client\features\overlay\overlay.h" />
+    <ClInclude Include="client\features\visuals\esp\esp.h" />
+    <ClInclude Include="client\features\visuals\fovchanger\fovchanger.h" />
+    <ClInclude Include="client\features\visuals\interface\interface.h" />
+    <ClInclude Include="client\features\visuals\offscreen\offscreen.h" />
+    <ClInclude Include="client\features\world\ambient\ambient.h" />
+    <ClInclude Include="client\features\world\lighting\lighting.h" />
+    <ClInclude Include="client\framework\settings\colors.h" />
+    <ClInclude Include="client\framework\settings\elements.h" />
+    <ClInclude Include="client\framework\settings\functions.h" />
+    <ClInclude Include="client\framework\settings\variables.h" />
+    <ClInclude Include="client\game\gameloop.h" />
+    <ClInclude Include="client\game\vischeck\vischeck.h" />
+    <ClInclude Include="client\globals\globals.h" />
+    <ClInclude Include="client\main.h" />
+    <ClInclude Include="client\sdk\impl\camera.h" />
+    <ClInclude Include="client\sdk\impl\player.h" />
+    <ClInclude Include="client\sdk\roblox.h" />
+    <ClInclude Include="client\sdk\utils\brick_color.h" />
+    <ClInclude Include="client\utils\color.h" />
+    <ClInclude Include="client\utils\driver\driver.h" />
+    <ClInclude Include="client\utils\math.h" />
+    <ClInclude Include="client\utils\matrix.h" />
+    <ClInclude Include="client\utils\misc.h" />
+    <ClInclude Include="client\utils\offsets.h" />
+    <ClInclude Include="client\utils\render.h" />
+    <ClInclude Include="client\vendor\imgui\imconfig.h" />
+    <ClInclude Include="client\vendor\imgui\imgui.h" />
+    <ClInclude Include="client\vendor\imgui\imgui_freetype.h" />
+    <ClInclude Include="client\vendor\imgui\imgui_impl_dx11.h" />
+    <ClInclude Include="client\vendor\imgui\imgui_impl_win32.h" />
+    <ClInclude Include="client\vendor\imgui\imgui_internal.h" />
+    <ClInclude Include="client\vendor\imgui\imstb_rectpack.h" />
+    <ClInclude Include="client\vendor\imgui\imstb_textedit.h" />
+    <ClInclude Include="client\vendor\imgui\imstb_truetype.h" />
+    <ClInclude Include="client\vendor\nlohmann\adl_serializer.hpp" />
+    <ClInclude Include="client\vendor\nlohmann\byte_container_with_subtype.hpp" />
+    <ClInclude Include="client\vendor\nlohmann\detail\abi_macros.hpp" />
+    <ClInclude Include="client\vendor\nlohmann\detail\conversions\from_json.hpp" />
+    <ClInclude Include="client\vendor\nlohmann\detail\conversions\to_chars.hpp" />
+    <ClInclude Include="client\vendor\nlohmann\detail\conversions\to_json.hpp" />
+    <ClInclude Include="client\vendor\nlohmann\detail\exceptions.hpp" />
+    <ClInclude Include="client\vendor\nlohmann\detail\hash.hpp" />
+    <ClInclude Include="client\vendor\nlohmann\detail\input\binary_reader.hpp" />
+    <ClInclude Include="client\vendor\nlohmann\detail\input\input_adapters.hpp" />
+    <ClInclude Include="client\vendor\nlohmann\detail\input\json_sax.hpp" />
+    <ClInclude Include="client\vendor\nlohmann\detail\input\lexer.hpp" />
+    <ClInclude Include="client\vendor\nlohmann\detail\input\parser.hpp" />
+    <ClInclude Include="client\vendor\nlohmann\detail\input\position_t.hpp" />
+    <ClInclude Include="client\vendor\nlohmann\detail\iterators\internal_iterator.hpp" />
+    <ClInclude Include="client\vendor\nlohmann\detail\iterators\iteration_proxy.hpp" />
+    <ClInclude Include="client\vendor\nlohmann\detail\iterators\iterator_traits.hpp" />
+    <ClInclude Include="client\vendor\nlohmann\detail\iterators\iter_impl.hpp" />
+    <ClInclude Include="client\vendor\nlohmann\detail\iterators\json_reverse_iterator.hpp" />
+    <ClInclude Include="client\vendor\nlohmann\detail\iterators\primitive_iterator.hpp" />
+    <ClInclude Include="client\vendor\nlohmann\detail\json_custom_base_class.hpp" />
+    <ClInclude Include="client\vendor\nlohmann\detail\json_pointer.hpp" />
+    <ClInclude Include="client\vendor\nlohmann\detail\json_ref.hpp" />
+    <ClInclude Include="client\vendor\nlohmann\detail\macro_scope.hpp" />
+    <ClInclude Include="client\vendor\nlohmann\detail\macro_unscope.hpp" />
+    <ClInclude Include="client\vendor\nlohmann\detail\meta\call_std\begin.hpp" />
+    <ClInclude Include="client\vendor\nlohmann\detail\meta\call_std\end.hpp" />
+    <ClInclude Include="client\vendor\nlohmann\detail\meta\cpp_future.hpp" />
+    <ClInclude Include="client\vendor\nlohmann\detail\meta\detected.hpp" />
+    <ClInclude Include="client\vendor\nlohmann\detail\meta\identity_tag.hpp" />
+    <ClInclude Include="client\vendor\nlohmann\detail\meta\is_sax.hpp" />
+    <ClInclude Include="client\vendor\nlohmann\detail\meta\std_fs.hpp" />
+    <ClInclude Include="client\vendor\nlohmann\detail\meta\type_traits.hpp" />
+    <ClInclude Include="client\vendor\nlohmann\detail\meta\void_t.hpp" />
+    <ClInclude Include="client\vendor\nlohmann\detail\output\binary_writer.hpp" />
+    <ClInclude Include="client\vendor\nlohmann\detail\output\output_adapters.hpp" />
+    <ClInclude Include="client\vendor\nlohmann\detail\output\serializer.hpp" />
+    <ClInclude Include="client\vendor\nlohmann\detail\string_concat.hpp" />
+    <ClInclude Include="client\vendor\nlohmann\detail\string_escape.hpp" />
+    <ClInclude Include="client\vendor\nlohmann\detail\string_utils.hpp" />
+    <ClInclude Include="client\vendor\nlohmann\detail\value_t.hpp" />
+    <ClInclude Include="client\vendor\nlohmann\json.hpp" />
+    <ClInclude Include="client\vendor\nlohmann\json_fwd.hpp" />
+    <ClInclude Include="client\vendor\nlohmann\ordered_map.hpp" />
+    <ClInclude Include="client\vendor\nlohmann\thirdparty\hedley\hedley.hpp" />
+    <ClInclude Include="client\vendor\nlohmann\thirdparty\hedley\hedley_undef.hpp" />
+    <ClInclude Include="client\vendor\oxorany\oxorany.h" />
+    <ClInclude Include="client\vendor\oxorany\oxorany_include.h" />
+    <ClInclude Include="client\whitelist\whitelist.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
